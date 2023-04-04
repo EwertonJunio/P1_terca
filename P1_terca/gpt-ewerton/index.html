@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Chat GPT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 36px;
+      font-weight: bold;
+    }
+    
+    .card {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 40px;
+    }
+    
+    .card-content {
+      padding: 20px;
+    }
+    
+    .input-field {
+      margin-bottom: 20px;
+    }
+    
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+      height: 500px;
+      transition: border-color 0.2s ease-in-out;
+    }
+    
+    input[type="text"]:focus,
+    textarea:focus {
+      border-color: #333;
+    }
+    
+    button {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+    }
+    
+    button:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="carousel">
+          <a class="carousel-item"><img src="https://picsum.photos/1000/3000?random=1"></a>
+          <a class="carousel-item"><img src="https://picsum.photos/1000/3000?random=2"></a>
+          <a class="carousel-item"><img src="https://picsum.photos/1000/3000?random=3"></a>
+        </div>
+        <div class="center-align">
+          <button class="btn prev">Anterior</button>
+          <button class="btn next">Próximo</button>
+        </div>
+      
+        <!-- restante do conteúdo -->
+      </div>
+    <div class="chat-container">
+      <div class="chat-box">
+        <div class="input-container">
+          <input id="question" type="text" placeholder="Digite sua pergunta...">
+          <button id="send-question">Enviar</button>
+        </div>
+        <div class="output-container">
+          <textarea id="result" class="output" readonly></textarea>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+  </html>
